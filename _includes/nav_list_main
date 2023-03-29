@@ -12,6 +12,62 @@
       </li>
       <li>
         <!--span 태그로 카테고리들을 크게 분류 ex) C/C++/C#-->
+
+        <span class="nav__sub-title">공부</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "NL" %}
+                        <li><a href="/categories/NL" class="">자연어 처리  ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "ML" %}
+                        <li><a href="/categories/ML" class="">머신러닝 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>      
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "DL" %}
+                        <li><a href="/categories/NL" class="">딥러닝  ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
+
+        <span class="nav__sub-title">학부연구생</span>
+
+
+        <span class="nav__sub-title">자격증</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "ADP" %}
+                        <li><a href="/categories/ADP" class="">ADP 자격증  ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "SQLP" %}
+                        <li><a href="/categories/SQLP" class="">SQLP 자격증 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "DAP" %}
+                        <li><a href="/categories/NL" class="">DAP 자격증  ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>          
+
+
+
+
+
+
         <span class="nav__sub-title">언어</span>
             <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
             <ul>
