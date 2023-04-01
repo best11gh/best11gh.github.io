@@ -23,21 +23,12 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "ML" %}
-                        <li><a href="/categories/ML" class="">머신러닝 ({{category[1].size}})</a></li>
+                    {% if category[0] == "ML_DL" %}
+                        <li><a href="/categories/ML_DL" class="">머신러닝/딥러닝 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>      
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "DL" %}
-                        <li><a href="/categories/NL" class="">딥러닝  ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
 
-
-        <span class="nav__sub-title">학부연구생</span>
 
 
         <span class="nav__sub-title">자격증</span>
